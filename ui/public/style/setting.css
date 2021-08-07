@@ -1,0 +1,98 @@
+/* =================================
+ * Auth (login/signup) Form CSS Code
+ * =================================
+ */
+
+.form {
+    padding: 25px 30px;
+}
+.form header {
+    font-size: 25px;
+    font-weight: 600;
+    padding-bottom: 10px;
+    border-bottom: 1px solid #e6e6e6;
+}
+.form form {
+    margin: 20px 0;
+}
+.form form .name-details {
+    display: flex;
+}
+.form form .name-details .field:first-child {
+    margin-right: 10px;
+}
+
+.update header{
+    display: inline;
+    color: var(--text);
+}
+.update .back-icon {
+    margin-right: 10px;
+    color: var(--text);
+}
+
+/* .form form .name-details .field:last-child {
+    margin-left: 10px;
+} */
+.form form .error-txt {
+    color: #721c24;
+    background-color: #f8d7da;
+    padding: 8px 10px;
+    text-align: center;
+    border-radius: 5px;
+    margin-bottom: 10px;
+    border: 1px solid #f5c6cb;
+    display: none;
+}
+.form form .field {
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 10px;
+}
+.form form .field label {
+    color: var(--text);
+    margin-bottom: 2px;
+}
+/* .form form .input input {
+    outline: none;
+} */
+.form form .input input {
+    color: var(--text-light);
+    background-color: var(--input-backgroud);
+    height: 40px;
+    width: 100%;
+    font-size: 16px;
+    padding: 5px 10px;
+    border: 1px solid var(--text-light);
+    border-radius: 5px;
+    outline: none;
+}
+.form form .button input {
+    margin-top: 10px;
+    height: 45px;
+    border: none;
+    font-size: 17px;
+    font-weight: 500;
+    background-color: var(--button);
+    color: var(--button-txt);
+    border-radius: 5px;
+    cursor: pointer;
+}
+.form form .field i {
+    position: absolute;
+    right: 20px;
+    top: 70%;
+    color: #ccc;
+    transform: translateY(-50%);
+    cursor: pointer;
+}
+.form form .field i.active::before {
+    color: #333;
+    content: "\f070";
+}
+.form .link {
+    text-align: center;
+    margin: 10px 0;
+    font-size: 17px;
+}

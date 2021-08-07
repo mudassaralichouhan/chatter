@@ -1,0 +1,106 @@
+/*
+ *
+ */
+
+:root {
+    --toggle-after-btn: #22303C;
+    --toggle-btn: #fff;
+    --toggle-btn-text: #000;
+}
+
+[theme="Dark"] {
+    --toggle-after-btn: #8899A6;
+    --toggle-btn: #22303C;
+    --toggle-btn-text: #fff;
+}
+
+.btn-container {
+    position: absolute;
+    right: 10px;
+    top: 10px;
+}
+
+.btn-container button {
+    --width: 180px;
+    --height: 60px;
+    border: 0;
+    position: relative;
+    min-width: var(--width);
+    min-height: var(--height);
+    border-radius: var(--height);
+    color: var(--toggle-btn);
+    font-family: "Montserrat";
+    font-weight: bold;
+    font-size: 20px;
+    background: var(--toggle-btn);
+    cursor: pointer;
+    overflow: hidden;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.btn-container button:hover {
+    color: var(--toggle-btn-text);
+}
+.btn-container button .text,
+.btn-container button .icon-container {
+    position: relative;
+    z-index: 2;
+}
+.btn-container button .icon-container {
+    --icon-size: 25px;
+    position: relative;
+    width: var(--icon-size);
+    height: var(--icon-size);
+    margin-left: 15px;
+    transition: transform 500ms ease;
+}
+.btn-container button .icon-container .icon {
+    position: absolute;
+    left: 0;
+    top: 0;
+    width: var(--icon-size);
+    height: var(--icon-size);
+    transition: transform 500ms ease, opacity 250ms ease;
+}
+.btn-container button .icon-container .icon--left {
+    transform: translateX(-200%);
+    opacity: 0;
+}
+.btn-container button .icon-container .icon svg {
+    width: 100%;
+    height: 100%;
+    fill: #fff;
+}
+.btn-container button::after {
+    content: "";
+    position: absolute;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    background: var(--toggle-after-btn);
+    border-radius: var(--height);
+    z-index: 1;
+    transition: transform 1000ms ease;
+}
+.btn-container button:hover::after {
+    transform: translateX(65%);
+}
+.btn-container button:hover .icon-container {
+    transform: translateX(125%);
+}
+.btn-container button:hover .icon-container .icon--left {
+    transform: translateX(0);
+    opacity: 1;
+}
+.btn-container button:hover .icon-container .icon--right {
+    transform: translateX(200%);
+    opacity: 0;
+}
+
+@media only screen and (max-width: 700px) {
+	.btn-container {
+		bottom: 10px;
+	}
+}

@@ -1,0 +1,80 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Inbox - Chat App</title>
+    <link rel="stylesheet" href="public/style/style.css"/>
+    <link rel="stylesheet" href="public/style/setting.css"/>
+    <link rel="stylesheet" href="public/style/theme-toggle-button.css"/>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.2/css/all.min.css"/>
+</head>
+<body theme="Dark">
+    <div class="wrapper">
+        <div class="btn-container">
+            <button>
+                <span class="text">Light</span>
+                <div class="icon-container">
+                    <div class="icon icon--left">
+                        <svg>
+                            <use xlink:href="#arrow-right"></use>
+                        </svg>
+                    </div>
+                    <div class="icon icon--right">
+                        <svg>
+                            <use xlink:href="#arrow-right"></use>
+                        </svg>
+                    </div>
+                </div>
+            </button>
+        </div>
+        <svg style="display: none;">
+            <symbol id="arrow-right" viewBox="0 0 20 10">
+                <path d="M14.84 0l-1.08 1.06 3.3 3.2H0v1.49h17.05l-3.3 3.2L14.84 10 20 5l-5.16-5z"></path>
+            </symbol>
+        </svg>
+        <section class="form update">
+
+            <a href="user.html" class="back-icon"><i class="fas fa-arrow-left"></i></a>
+            <header>Update your Profile</header>
+
+            <form action="#" enctype="multipart/form-data">
+
+                <div class="error-txt"></div>
+
+                <div class="name-details">
+                    <div class="field input">
+                        <label>First Name</label>
+                        <input type="text" name="fname" placeholder="First Name"/>
+                    </div>
+                    <div class="field input">
+                        <label>Last Name</label>
+                        <input type="text" name="lname" placeholder="Last Name"/>
+                    </div>
+                </div>
+                <div class="field input">
+                    <label>Email Address</label>
+                    <input type="text" name="email" placeholder="Enter your e-mail"/>
+                </div>
+                <div class="field input">
+                    <label>Password</label>
+                    <input type="password" name="pwd" placeholder="Enter new password"/>
+                    <i class="fas fa-eye"></i>
+                </div>
+                <div class="field button">
+                    <input type="submit" value="Save changes"/>
+                </div>
+            </form>
+
+        </section>
+    </div>
+
+    <script src="public/routine/globle.js"></script>
+    <script src="public/routine/passwd-show-hide.js"></script>
+    <script src="public/setting.js"></script>
+    <script src="public/routine/session_exist.js"></script>
+    <script src="public/theme-toggle.js"></script>
+
+</body>
+</html>

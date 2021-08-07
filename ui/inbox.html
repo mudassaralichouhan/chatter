@@ -1,0 +1,98 @@
+<!doctype html>
+<html lang="en" xmlns="http://www.w3.org/1999/html">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <meta http-equiv="X-UA-Compatible" content="ie=edge">
+        <title>Realtime Chat App</title>
+        <link rel="stylesheet" href="public/style/style.css"/>
+        <link rel="stylesheet" href="public/style/inbox.css"/>
+        <link rel="stylesheet" href="public/style/context-menu.css"/>
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.2/css/all.min.css"/>
+    </head>
+    <body theme="Dark">
+        <div class="wrapper">
+            <section class="chat-area">
+                <header>
+                    <a href="user.html" class="back-icon"><i class="fas fa-arrow-left"></i></a>
+                    <img src="" alt="">
+                    <div class="details">
+                        <span>Loading...</span>
+                        <p>sync...</p>
+                    </div>
+                </header>
+
+                <div class="chat-box" oncontextmenu="return false">
+
+<!--                    <div class="chat outgoing">-->
+<!--                        <div class="details">-->
+<!--                            <p id="1">Lorem ipsum dolor sit amet, consectetur adipisicing</p>-->
+<!--                        </div>-->
+<!--                    </div>-->
+<!--                    <div class="chat incoming">-->
+<!--                        <img src="" alt="">-->
+<!--                        <div class="details">-->
+<!--                            <p id="2">Lorem ipsum dolor sit amet, consectetur adipisicing</p>-->
+<!--                            <span class="">05 Janary 08:20</span>-->
+<!--                        </div>-->
+<!--                    </div>-->
+
+<!--                    <div class="chat outgoing">-->
+<!--                        <div class="media details">-->
+<!--                            <video controls>-->
+<!--                                <source src="../video.mp4" type="video/mp4">-->
+<!--                                Your browser does not support HTML video.-->
+<!--                            </video>-->
+<!--                            <p id="1">Lorem ipsum dolor sit amet, consectetur adipisicing</p>-->
+<!--                            <span class="">05 Janary 08:20</span>-->
+<!--                        </div>-->
+<!--                    </div>-->
+<!--                    <div class="chat incoming">-->
+<!--                        <img src="" alt="">-->
+<!--                        <div class="media details">-->
+<!--                            <video width="300" controls>-->
+<!--                                <source src="../video.mp4" type="video/mp4">-->
+<!--                                Your browser does not support HTML video.-->
+<!--                            </video>-->
+<!--                            <p id="3">Lorem ipsum dolor sit amet, consectetur adipisicing</p>-->
+<!--                            <span class="">05 Janary 08:20</span>-->
+<!--                        </div>-->
+<!--                    </div>-->
+
+<!--                    <div class="chat outgoing">-->
+<!--                        <div class="media details">-->
+<!--                            <img src="../image.jpeg"/>-->
+<!--                            <p id="2">Lorem ipsum dolor sit amet, consectetur adipisicing</p>-->
+<!--                            <span class="">05 Janary 08:20</span>-->
+<!--                        </div>-->
+<!--                    </div>-->
+<!--                    <div class="chat incoming">-->
+<!--                        <img src="" alt="">-->
+<!--                        <div class="media details">-->
+<!--                            <img src=""/>-->
+<!--                            <p id="2">Lorem ipsum dolor sit amet, consectetur adipisicing</p>-->
+<!--                            <span class="">05 Janary 08:20</span>-->
+<!--                        </div>-->
+<!--                    </div>-->
+
+                    <div id="context-menu">
+                        <div class="item delete">Delete</div>
+                        <div class="item copy">Copy</div>
+                    </div>
+
+                </div>
+
+                <form action="#" class="typing-area" autocomplete="off">
+                    <textarea name="message" class="typed-text" placeholder="Type message here..." autofocus></textarea>
+                    <button><i class="fa fa-upload" aria-hidden="true"></i></button>
+                    <button><i class="fab fa-telegram-plane"></i></button>
+                </form>
+
+            </section>
+        </div>
+        <script src="public/routine/globle.js"></script>
+        <script src="public/routine/session_exist.js"></script>
+        <script src="public/context-menu.js"></script>
+        <script src="public/inbox.js"></script>
+    </body>
+</html>

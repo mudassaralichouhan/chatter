@@ -1,0 +1,40 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Login - Realtime Chat App</title>
+    <link rel="stylesheet" href="public/style/style.css"/>
+    <link rel="stylesheet" href="public/style/auth.css"/>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.2/css/all.min.css"/>
+</head>
+<body theme="Dark">
+    <div class="wrapper">
+        <section class="form login">
+            <header>Realtime Chat App</header>
+            <form action="user.html">
+                <div class="error-txt"></div>
+                <div class="field input">
+                    <label>Email Address</label>
+                    <input type="text" name="email" placeholder="Enter your e-mail"/>
+                </div>
+                <div class="field input">
+                    <label>Password</label>
+                    <input type="password" name="pwd" placeholder="Enter your password"/>
+                    <i class="fas fa-eye"></i>
+                </div>
+                <div class="field button">
+                    <input type="submit" value="Continue to Chat"/>
+                </div>
+                <div class="link">not yet signed up? <a href="index.html">register now</a></div>
+            </form>
+        </section>
+    </div>
+
+    <script src="public/routine/globle.js"></script>
+    <script src="public/routine/passwd-show-hide.js"></script>
+    <script src="public/login.js"></script>
+
+</body>
+</html>
